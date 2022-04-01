@@ -22,51 +22,6 @@ are used to launch the necessary nodes to achieve the task. To view the average 
 * CMake Build System
 * Sphinx documentation system
 
-## File Structure
-
-.
-├── average_bringup
-│   ├── CMakeLists.txt
-│   ├── launch
-│   │   ├── laser_average_launch.launch.py
-│   │   ├── speed_average_launch.launch.py
-│   │   └── temp_average_launch.launch.py
-│   └── package.xml
-├── data_processor
-│   ├── data_processor
-│   │   ├── __init__.py
-│   │   ├── laser_subscriber.py
-│   │   ├── __pycache__
-│   │   ├── speed_subscriber.py
-│   │   └── temp_subscriber.py
-│   ├── package.xml
-│   ├── resource
-│   │   └── data_processor
-│   ├── setup.cfg
-│   ├── setup.py
-│   └── test
-│       ├── test_copyright.py
-│       ├── test_flake8.py
-│       └── test_pep257.py
-└── sensors
-    ├── package.xml
-    ├── resource
-    │   └── sensors
-    ├── sensors
-    │   ├── __init__.py
-    │   ├── laser.py
-    │   ├── __pycache__
-    │   ├── speed.py
-    │   └── temp.py
-    ├── setup.cfg
-    ├── setup.py
-    └── test
-        ├── test_copyright.py
-        ├── test_flake8.py
-        └── test_pep257.py
-
-12 directories, 27 files
-
 
 ## License 
 
