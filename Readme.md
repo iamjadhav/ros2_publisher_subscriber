@@ -56,12 +56,13 @@ Before building the workspace, add following lines to your bashrc,
 
 ```
 source /opt/ros/foxy/setup.bash
-source ~/ros2_ws/install/setup.bash
+source ~/ros2_publisher_subscriber/install/setup.bash
 ```
 
 Execute the following commands after unzipping the workspace in your home directory,
 ```
-cd ros2_ws
+git clone --recursive https://github.com/iamjadhav/ros2_publisher_subscriber.git
+cd ros2_publisher_subscriber
 colcon build
 . install/setup.bash
 ```
@@ -105,17 +106,17 @@ ros2 run rqt_plot rqt_plot /average_distance/data
 
 1) To view Sensors package documentation, Open the index.html from the following directory,
 ```
-cd ~/ros2_ws/src/sensors/sensors/docs/_build/html/
+cd ~/ros2_publisher_subscriber/src/sensors/sensors/docs/_build/html/
 ```
 
 2) To view Data_processor package documentation, Open the index.html from the following directory,
 ```
-cd ~/ros2_ws/src/data_processor/data_processor/docs/_build/html
+cd ~/ros2_publisher_subscriber/src/data_processor/data_processor/docs/_build/html
 ```
 
 3) To view Average_bringup package documentation, Open the index.html from the following directory,
 ```
-cd ~/ros2_ws/src/average_bringup/launch/docs/_build/html
+cd ~/ros2_publisher_subscriber/src/average_bringup/launch/docs/_build/html
 ```
 
 

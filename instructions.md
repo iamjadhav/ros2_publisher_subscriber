@@ -104,7 +104,23 @@ source /opt/ros/foxy/setup.bash
 source ~/ros2_ws/install/setup.bash
 ```
 
-Execute the following commands after unzipping the workspace in your home directory,
+If you want to clone the github repo and build the project then,
+
+```
+git clone --recursive https://github.com/iamjadhav/ros2_publisher_subscriber.git
+cd ros2_publisher_subscriber
+colcon build
+. install/setup.bash
+```
+
+(If you plan to clone the github repo then please replace ros2_ws by ros2_publisher_subscriber for commands from here on ...)
+
+
+OR 
+
+
+Execute the following commands after unzipping the workspace in your home directory, (recommended)
+
 ```
 cd ros2_ws
 colcon build
